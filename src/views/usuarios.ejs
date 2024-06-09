@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="https://bootswatch.com/5/flatly/bootstrap.min.css">
+  <style>
+    .navbar-brand {
+      margin-left: 40px;
+    }
+
+    .navbar-nav {
+      justify-content: flex-end;
+      text-align: right;
+    }
+  </style>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary"> <a class="navbar-brand" href="#">TECNOFEST</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMenu"
+      aria-controls="navbarNavAltMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMenu">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sobre nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Ponentes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Registro</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+    <div class="row d-flex justify-content-between align-items-start">
+      <div class="col-md-3">
+        <img src="/images/logo.png" alt="Descripción de la imagen" class="img-fluid">
+      </div>
+      <div class="col-md-8">
+        <h2>TECNOFEST</h2>
+        <p>TECNOFEST es un día dedicado a celebrar el potencial infinito de la tecnología. Desde las últimas
+          innovaciones hasta los avances futuristas, este evento reúne lo mejor y lo más brillante del mundo tecnológico
+          en un solo lugar. Habrá algo para todos, desde conferencias inspiradoras hasta emocionantes juegos y
+          demostraciones de vanguardia.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-header primary">
+            Juegos
+          </div>
+          <div class="card-body">
+            <p class="card-text">¡Pon a prueba tus habilidades y conocimientos tecnológicos en nuestros emocionantes
+              juegos diseñados para todas las edades!</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-header danger">
+            Stands
+          </div>
+          <div class="card-body">
+            <p class="card-text">Explora una variedad de stands donde podrás interactuar con las últimas innovaciones
+              tecnológicas, desde realidad virtual hasta inteligencia artificial.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-header success">
+            Conferencias
+          </div>
+          <div class="card-body">
+            <p class="card-text">Sumérgete en charlas cautivadoras impartidas por líderes de la industria, quienes
+              compartirán su visión sobre el futuro de la tecnología y su impacto en nuestras vidas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <div class="card">
+      <div class="card-header bg-primary text-white">
+        <h2>Registro para TecnoFest</h2>
+      </div>
+      <div class="card-body">
+        <form action="/registro" method="post">
+          <div class="form-group">
+            <label for="nombreCompleto">Nombre completo:</label>
+            <input type="text" class="form-control" id="nombreCompleto" name="nombre_completo"
+              placeholder="Ingrese su nombre completo" required>
+          </div>
+          <div class="form-group">
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" class="form-control" id="telefono" name="telefono"
+              placeholder="Ingrese su número de teléfono" required>
+          </div>
+          <div class="form-group">
+            <label for="nivelEducativo">Nivel educativo:</label>
+            <select class="form-control" id="nivelEducativo" name="educacion" required>
+              <option value="">Seleccione su nivel educativo</option>
+              <option value="Estudiante de secundaria">Estudiante de secundaria</option>
+              <option value="Estudiante universitario">Estudiante universitario</option>
+              <option value="Profesional">Profesional</option>
+              <option value="Otro">Otro</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary mt-3">Registrarse</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer class="navbar navbar-expand-lg navbar-dark bg-dark mt-5">
+    <div class="container">
+      <a class="navbar-brand" href="#">TECNOFEST</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sobre Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Ponentes</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
